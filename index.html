@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Kushch | Business Innovator</title>
+    <meta name="description" content="Professional portfolio of Maria Kushch, business technology innovator">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="logo">MK</div>
+            <ul class="nav-links">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="hero-content">
+                <h1>Maria <span>Kushch</span></h1>
+                <p class="subtitle">Business Technology Innovator</p>
+                <div class="hero-buttons">
+                    <a href="#work" class="cta-button">View Experience</a>
+                    <a href="resume.pdf" download class="cta-button secondary">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="photo-frame">
+                    <img src="your-photo.jpg" alt="Maria Kushch" class="profile-photo">
+                </div>
+            </div>
+        </header>
+
+        <!-- Work Experience Section -->
+        <section id="work" class="section">
+            <h2 class="section-title"><span>01</span> Work Experience</h2>
+
+            <!-- KiBuddy -->
+            <div class="experience-card">
+                <div class="exp-header">
+                    <h3>KiBuddy Financial Literacy App</h3>
+                    <div class="exp-tag">PWA</div>
+                </div>
+                <p class="exp-description">Progressive web application designed to improve financial literacy among
+                    teenagers through gamified learning.</p>
+                <button class="exp-toggle" onclick="toggleDetails(this)">Learn More <i
+                        class="fas fa-chevron-down"></i></button>
+                <div class="exp-details">
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <h4>Role:</h4>
+                            <p>Team Leader (Technovation Girls 2025)</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Key Achievements:</h4>
+                            <ul>
+                                <li>Conducted market research with 100+ target users</li>
+                                <li>Designed UI/UX prototypes in Figma</li>
+                                <li>Developed business plan and pitch materials</li>
+                                <li>Implemented gamification elements</li>
+                            </ul>
+                        </div>
+                        <div class="detail-item full-width">
+                            <a href="KiBuddy Pitch.pdf" class="case-study-link">View Full Case Study →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LaunchX Program -->
+            <div class="experience-card">
+                <div class="exp-header">
+                    <h3>LaunchX Innovation Program</h3>
+                    <div class="exp-tag">Summer 2025</div>
+                </div>
+                <p class="exp-description">Selected participant in competitive entrepreneurship summer program focused
+                    on product development.</p>
+                <button class="exp-toggle" onclick="toggleDetails(this)">Learn More <i
+                        class="fas fa-chevron-down"></i></button>
+                <div class="exp-details">
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <h4>Program Focus:</h4>
+                            <ul>
+                                <li>Product development lifecycle</li>
+                                <li>Market validation techniques</li>
+                                <li>Investor pitching strategies</li>
+                            </ul>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Expected Outcomes:</h4>
+                            <ul>
+                                <li>Develop MVP for educational platform</li>
+                                <li>Present to panel of Silicon Valley investors</li>
+                                <li>Network with industry professionals</li>
+                            </ul>
+                        </div>
+                        <div class="detail-item full-width">
+                            <a href="https://www.launchx.com/programs/online-innovation" class="case-study-link">View Program Details →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Competitions -->
+            <div class="experience-card">
+                <div class="exp-header">
+                    <h3>Competitions</h3>
+                    <div class="exp-tag">Achievements</div>
+                </div>
+
+                <!-- UBiz Competition -->
+                <div class="competition-item">
+                    <h4>UBiz Case Competition (Ukraine-wide)</h4>
+                    <p class="competition-description">Led a team in developing and pitching a business case solution to
+                        a panel of judges.</p>
+                    <button class="exp-toggle" onclick="toggleDetails(this)">Learn More <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="exp-details">
+                        <div class="detail-item">
+                            <h4>Role:</h4>
+                            <p>Team Leader | Top 10 Solutions</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Achievements:</h4>
+                            <ul>
+                                <li>Our project was selected among the top 10 nationwide</li>
+                                <li>Developed comprehensive business strategy</li>
+                                <li>Presented to industry experts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DK Hackathon -->
+                <div class="competition-item">
+                    <h4>DK Business Hackathon</h4>
+                    <p class="competition-description">Collaborated with a team to develop an original business idea and
+                        prototype.</p>
+                    <button class="exp-toggle" onclick="toggleDetails(this)">Learn More <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="exp-details">
+                        <div class="detail-item">
+                            <h4>Role:</h4>
+                            <p>Participant | Business Idea & Prototype Development</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Focus Areas:</h4>
+                            <ul>
+                                <li>Ideation and design thinking</li>
+                                <li>User needs analysis</li>
+                                <li>Rapid prototyping</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Idea Competition -->
+                <div class="competition-item">
+                    <h4>Business Idea Competition (Ukraine-wide)</h4>
+                    <p class="competition-description">Developed and pitched a full business concept in the final round.
+                    </p>
+                    <button class="exp-toggle" onclick="toggleDetails(this)">Learn More <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="exp-details">
+                        <div class="detail-item">
+                            <h4>Role:</h4>
+                            <p>Finalist | Pitch Presenter</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Skills Gained:</h4>
+                            <ul>
+                                <li>Business storytelling</li>
+                                <li>Market positioning</li>
+                                <li>Business model creation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Harvard Competition -->
+                <div class="competition-item">
+                    <h4>Harvard Crimson Global Case Competition</h4>
+                    <p class="competition-description">Led an international team in solving a complex business case.</p>
+                    <button class="exp-toggle" onclick="toggleDetails(this)">Learn More <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="exp-details">
+                        <div class="detail-item">
+                            <h4>Role:</h4>
+                            <p>Team Leader | International Participation</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Key Aspects:</h4>
+                            <ul>
+                                <li>Strategic thinking under pressure</li>
+                                <li>Cross-cultural team coordination</li>
+                                <li>Time-constrained decision-making</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Courses -->
+            <div class="experience-card">
+                <div class="exp-header">
+                    <h3>Courses & Training</h3>
+                    <div class="exp-tag">Education</div>
+                </div>
+
+                <!-- UF Startup School -->
+                <div class="course-item">
+                    <h4>UF Startup School Beginner</h4>
+                    <p class="course-description">Developed and pitched a business idea to real investors in a startup
+                        bootcamp.</p>
+                    <button class="exp-toggle" onclick="toggleDetails(this)">Learn More <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="exp-details">
+                        <div class="detail-item">
+                            <h4>Duration:</h4>
+                            <p>December 11–27, 2024</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Key Learnings:</h4>
+                            <ul>
+                                <li>Ideation and validation techniques</li>
+                                <li>Presentation under time pressure</li>
+                                <li>Investor pitch development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- English for Business -->
+                <div class="course-item">
+                    <h4>English for Business and Entrepreneurship – University of Pennsylvania</h4>
+                    <p class="course-description">Developing business communication skills in English.</p>
+                    <button class="exp-toggle" onclick="toggleDetails(this)">Learn More <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="exp-details">
+                        <div class="detail-item">
+                            <h4>Status:</h4>
+                            <p>In progress</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Focus Areas:</h4>
+                            <ul>
+                                <li>Business pitching in English</li>
+                                <li>Branding vocabulary</li>
+                                <li>Startup terminology</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Marketing Course -->
+                <div class="course-item">
+                    <h4>Introduction to Marketing – University of Pennsylvania</h4>
+                    <p class="course-description">Exploring fundamental marketing concepts and strategies.</p>
+                    <button class="exp-toggle" onclick="toggleDetails(this)">Learn More <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="exp-details">
+                        <div class="detail-item">
+                            <h4>Status:</h4>
+                            <p>In progress</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Topics Covered:</h4>
+                            <ul>
+                                <li>Consumer behavior analysis</li>
+                                <li>Market segmentation</li>
+                                <li>Positioning strategies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pitch & Presentation -->
+                <div class="course-item">
+                    <h4>Pitch & Presentation – Nobel</h4>
+                    <p class="course-description">Learned persuasive communication and presentation skills.</p>
+                    <button class="exp-toggle" onclick="toggleDetails(this)">Learn More <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="exp-details">
+                        <div class="detail-item">
+                            <h4>Practical Applications:</h4>
+                            <ul>
+                                <li>Confident pitch delivery</li>
+                                <li>Effective presentation structure</li>
+                                <li>Applied in real competitions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leadership Course -->
+                <div class="course-item">
+                    <h4>Leadership – Nobel</h4>
+                    <p class="course-description">Developed leadership skills through practical exercises.</p>
+                    <button class="exp-toggle" onclick="toggleDetails(this)">Learn More <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="exp-details">
+                        <div class="detail-item">
+                            <h4>Key Focus Areas:</h4>
+                            <ul>
+                                <li>Decision-making frameworks</li>
+                                <li>Emotional intelligence</li>
+                                <li>Project ownership</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Critical Thinking -->
+                <div class="course-item">
+                    <h4>Critical Thinking – Junior Academy of Sciences of Ukraine (МАН)</h4>
+                    <p class="course-description">Studied analytical thinking and problem-solving approaches.</p>
+                    <button class="exp-toggle" onclick="toggleDetails(this)">Learn More <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="exp-details">
+                        <div class="detail-item">
+                            <h4>Skills Developed:</h4>
+                            <ul>
+                                <li>Logical reasoning</li>
+                                <li>Argument analysis</li>
+                                <li>Business strategy formulation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="section">
+            <h2 class="section-title"><span>02</span> Achievements</h2>
+
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+                    <h3>Economics Olympiad</h3>
+                    <p>3rd Place Regional • 14th National</p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+                    <h3>UBiz Case Competition</h3>
+                    <p>Top 10 Solution (Ukraine-wide)</p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-award"></i></div>
+                    <h3>Kredo Business Idea</h3>
+                    <p>Finalist with KiCareer project</p>
+                </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="skills-section">
+                <h3 class="skills-title">Core Competencies</h3>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h4>Business & Strategy</h4>
+                        <ul>
+                            <li>Business Model Development</li>
+                            <li>Market Research & Analysis</li>
+                            <li>Financial Modeling</li>
+                            <li>Strategic Planning</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Technology & Design</h4>
+                        <ul>
+                            <li>UI/UX Design Principles</li>
+                            <li>Product Development</li>
+                            <li>Prototyping (Figma)</li>
+                            <li>Technical Communication</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Leadership</h4>
+                        <ul>
+                            <li>Team Management</li>
+                            <li>Public Speaking</li>
+                            <li>Investor Pitching</li>
+                            <li>Cross-functional Collaboration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2 class="section-title"><span>03</span> Contact</h2>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <a href="mailto:mariyak27.07@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i> mariyak27.07@gmail.com
+                    </a>
+                    <a href="tel:+380967130631" class="contact-link">
+                        <i class="fas fa-phone"></i> +380 96 713 06 31
+                    </a>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send me a message</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="social-links">
+                    <h3>Connect With Me</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-behance"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2025 Maria Kushch. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
