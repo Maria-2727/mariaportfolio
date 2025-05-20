@@ -4,494 +4,654 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maria Kushch | Business Innovator</title>
+    <title>Maria Kushch | Business Technology Innovator</title>
     <meta name="description" content="Professional portfolio of Maria Kushch, business technology innovator">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <!-- Navigation -->
-        <nav class="navbar">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
             <div class="logo">MK</div>
             <ul class="nav-links">
                 <li><a href="#work">Work</a></li>
                 <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="resume.pdf" download class="nav-button">Download CV</a></li>
             </ul>
-        </nav>
+            <button class="mobile-menu-button">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
 
-        <!-- Hero Section -->
-        <header class="hero">
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
             <div class="hero-content">
-                <h1>Maria <span>Kushch</span></h1>
-                <p class="subtitle">Business Technology Innovator</p>
+                <h1 class="hero-title">
+                    <span class="hero-title-line">Innovating at the</span>
+                    <span class="hero-title-line">intersection of</span>
+                    <span class="hero-title-line accent">business & technology</span>
+                </h1>
+                <p class="hero-subtitle">Hi, I'm Maria Kushch - a business technology innovator passionate about
+                    creating solutions that bridge the gap between technical possibilities and real-world business
+                    needs.</p>
                 <div class="hero-buttons">
-                    <a href="#work" class="cta-button">View Experience</a>
-                    <a href="resume.pdf" download class="cta-button secondary">
-                        <i class="fas fa-download"></i> Download CV
+                    <a href="#work" class="cta-button primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-down"></i>
+                    </a>
+                    <a href="#contact" class="cta-button secondary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-paper-plane"></i>
                     </a>
                 </div>
             </div>
             <div class="hero-image">
-                <div class="photo-frame">
+                <div class="image-wrapper">
+                    <div class="glow-effect"></div>
                     <img src="your-photo.jpg" alt="Maria Kushch" class="profile-photo">
+                    <div class="decorative-shape shape-1"></div>
+                    <div class="decorative-shape shape-2"></div>
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <!-- Work Experience Section -->
-        <section id="work" class="section">
-            <h2 class="section-title"><span>01</span> Work Experience</h2>
+    <!-- Work Experience Section -->
+    <section id="work" class="section work-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Professional Journey</span>
+                <h2 class="section-title">Work Experience</h2>
+                <div class="section-divider"></div>
+            </div>
 
-            <!-- KiBuddy -->
-            <div class="experience-card">
-                <div class="exp-header">
-                    <h3>KiBuddy Financial Literacy App</h3>
-                    <div class="exp-tag">PWA</div>
+            <div class="experience-timeline">
+                <!-- KiBuddy -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="exp-header">
+                                <span class="exp-date">2025 - Present</span>
+                                <h3 class="exp-title">KiBuddy Financial Literacy App</h3>
+                                <span class="exp-tag">PWA</span>
+                            </div>
+                            <p class="exp-description">Progressive web application designed to improve financial
+                                literacy among teenagers through gamified learning experiences and interactive tools.
+                            </p>
+                            <div class="exp-skills">
+                                <span class="skill-tag">Product Design</span>
+                                <span class="skill-tag">Business Strategy</span>
+                                <span class="skill-tag">Full-stack Development</span>
+                            </div>
+                            <button class="exp-toggle" onclick="toggleDetails(this)">
+                                <span>View Details</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="exp-details">
+                                <div class="details-grid">
+                                    <div class="detail-item">
+                                        <h4>Role & Responsibilities</h4>
+                                        <ul>
+                                            <li>Team Leader for Technovation Girls 2025 competition</li>
+                                            <li>Conceptualized the original product idea based on market gap analysis
+                                            </li>
+                                            <li>Designed complete UI/UX flow and developed both front-end and back-end
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>Key Achievements</h4>
+                                        <ul>
+                                            <li>Developed comprehensive business plan with monetization strategy</li>
+                                            <li>Created all pitch materials including demo videos and investor decks
+                                            </li>
+                                            <li>Implemented React, HTML/CSS, and Java for technical solution</li>
+                                        </ul>
+                                    </div>
+                                    <div class="detail-item full-width">
+                                        <a href="https://kibuddy.vercel.app/" class="case-study-link">
+                                            <span>Explore Full Case Study</span>
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="exp-description">Progressive web application designed to improve financial literacy among
-                    teenagers through gamified learning.</p>
-                <button class="exp-toggle" onclick="toggleDetails(this)">Learn More <i
-                        class="fas fa-chevron-down"></i></button>
-                <div class="exp-details">
-                    <div class="details-grid">
-                        <div class="detail-item">
-                            <h4>Role:</h4>
-                            <p>Team Leader (Technovation Girls 2025)</p>
+
+                <!-- LaunchX Program -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="exp-header">
+                                <span class="exp-date">Summer 2025</span>
+                                <h3 class="exp-title">LaunchX Innovation Program</h3>
+                                <span class="exp-tag">Entrepreneurship</span>
+                            </div>
+                            <p class="exp-description">Selected participant in competitive entrepreneurship summer
+                                program focused on product development and go-to-market strategies.</p>
+                            <div class="exp-skills">
+                                <span class="skill-tag">Market Research</span>
+                                <span class="skill-tag">Product Development</span>
+                                <span class="skill-tag">Pitching</span>
+                            </div>
+                            <button class="exp-toggle" onclick="toggleDetails(this)">
+                                <span>View Details</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="exp-details">
+                                <div class="details-grid">
+                                    <div class="detail-item">
+                                        <h4>Program Focus</h4>
+                                        <ul>
+                                            <li>Real-world problem solving for partner companies</li>
+                                            <li>Comprehensive market research and competitive analysis</li>
+                                            <li>Development of viable business strategies</li>
+                                        </ul>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>Key Learnings</h4>
+                                        <ul>
+                                            <li>Customer discovery and validation techniques</li>
+                                            <li>Financial modeling for startups</li>
+                                            <li>Investor pitch development and delivery</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="detail-item">
-                            <h4>Key Achievements:</h4>
-                            <ul>
-                                <li>Came up with the original product idea based on a real-world problem</li>
-                                <li>Designed the entire user interface and developed both front-end and back-end using React, HTML/CSS, and Java</li>
-                                <li>Wrote a full business plan and defined the monetization approach</li>
-                                <li>Created all pitch materials for Technovation Girls, including a pitch video and a technical demo video</li>
-                            </ul>
-                        </div>
-                        <div class="detail-item full-width">
-                            <a href="https://kibuddy.vercel.app/" class="case-study-link">View Full Case Study →</a>
+                    </div>
+                </div>
+
+                <!-- SheLeads Program -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="exp-header">
+                                <span class="exp-date">Summer 2025</span>
+                                <h3 class="exp-title">SheLeads Program</h3>
+                                <span class="exp-tag">Leadership</span>
+                            </div>
+                            <p class="exp-description">Selected for 8-week entrepreneurship program for young women in
+                                STEM, combining mentorship with hands-on project development.</p>
+                            <div class="exp-skills">
+                                <span class="skill-tag">Women in STEM</span>
+                                <span class="skill-tag">Mentorship</span>
+                                <span class="skill-tag">Project Planning</span>
+                            </div>
+                            <button class="exp-toggle" onclick="toggleDetails(this)">
+                                <span>View Details</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="exp-details">
+                                <div class="details-grid">
+                                    <div class="detail-item">
+                                        <h4>Program Highlights</h4>
+                                        <ul>
+                                            <li>Entrepreneurship and leadership training for women</li>
+                                            <li>Branding, marketing, and financial planning workshops</li>
+                                            <li>One-on-one mentorship from industry professionals</li>
+                                        </ul>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>Outcomes</h4>
+                                        <ul>
+                                            <li>Developed and refined personal business concept</li>
+                                            <li>Received expert feedback throughout development</li>
+                                            <li>Presented final pitch at in-person event in Kyiv</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- LaunchX Program -->
-            <div class="experience-card">
-                <div class="exp-header">
-                    <h3>LaunchX Innovation Program</h3>
-                    <div class="exp-tag">Summer 2025</div>
-                </div>
-                <p class="exp-description">Selected participant in competitive entrepreneurship summer program focused
-                    on product development.</p>
-                <button class="exp-toggle" onclick="toggleDetails(this)">Learn More <i
-                        class="fas fa-chevron-down"></i></button>
-                <div class="exp-details">
-                    <div class="details-grid">
-                        <div class="detail-item">
-                            <h4>Program Focus:</h4>
-                            <ul>
-                                <li>Real-world problem solving for a partner company</li>
-                                <li>Market research, competitive analysis, and strategy development</li>
-                                <li>Go-to-market strategy and pitching practice with mentorship</li>
-                            </ul>
-                        </div>
-                        <div class="detail-item">
-                            <h4>Expected Outcomes:</h4>
-                            <ul>
-                                <li>Identify and analyze a real business problem</li>
-                                <li>Develop and test a prototype solution with a team</li>
-                                <li>Create a market strategy, operations recommendations, and financial model</li>
-                            </ul>
-                        </div>
-                        <div class="detail-item full-width">
-                            <a href="https://www.launchx.com/programs/online-innovation" class="case-study-link">View Program Details →</a>
-                        </div>
-                    </div>
-                </div>
+    <!-- Competitions Section -->
+    <section class="section competitions-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Challenge Accepted</span>
+                <h2 class="section-title">Competitions</h2>
+                <div class="section-divider"></div>
             </div>
 
-            <div class="experience-card">
-                <div class="exp-header">
-                    <h3>SheLeads Program</h3>
-                    <div class="exp-tag">Summer 2025</div>
-                </div>
-                <p class="exp-description">Selected for an 8-week entrepreneurship program for young women in STEM, combining mentorship and project-based
-                learning.</p>
-                <button class="exp-toggle" onclick="toggleDetails(this)">Learn More <i class="fas fa-chevron-down"></i></button>
-                <div class="exp-details">
-                    <div class="details-grid">
-                        <div class="detail-item">
-                            <h4>Program Focus:</h4>
-                            <ul>
-                                <li>Entrepreneurship and leadership for young women in STEM</li>
-                                <li>Branding, marketing, finance, and project planning</li>
-                                <li>Mentorship from professionals in business and technology</li>
-                            </ul>
-                        </div>
-                        <div class="detail-item">
-                            <h4>Expected Outcomes:</h4>
-                            <ul>
-                                <li>Develop and refine a personal business idea</li>
-                                <li>Receive expert feedback and guidance throughout the program</li>
-                                <li>Pitch the project at a final in-person event in Kyiv</li>
-                            </ul>
-                        </div>
-                        <div class="detail-item full-width">
-                            <a href="She-LEADs: Мережа Жіночого Лідерства
-
-Facebook
-https://www.facebook.com › Facebook Groups" class="case-study-link">View Program
-                                Details →</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Competitions -->
-            <div class="experience-card">
-                <div class="exp-header">
-                    <h3>Competitions</h3>
-                    <div class="exp-tag">Achievements</div>
-                </div>
-
+            <div class="competitions-grid">
                 <!-- UBiz Competition -->
-                <div class="competition-item">
-                    <h4>UBiz Case Competition (Ukraine-wide)</h4>
-                    <p class="competition-description">Led a team in developing and pitching a business case solution to
-                        a panel of judges.</p>
-                    <button class="exp-toggle" onclick="toggleDetails(this)">Learn More <i
-                            class="fas fa-chevron-down"></i></button>
+                <div class="competition-card">
+                    <div class="competition-header">
+                        <h3>UBiz Case Competition</h3>
+                        <span class="competition-tag">Ukraine-wide</span>
+                    </div>
+                    <p class="competition-description">Led team in developing and pitching business case solution to
+                        panel of industry judges.</p>
+                    <div class="competition-meta">
+                        <span class="meta-item">
+                            <i class="fas fa-trophy"></i>
+                            Top 10 Solution
+                        </span>
+                        <span class="meta-item">
+                            <i class="fas fa-users"></i>
+                            Team Leader
+                        </span>
+                    </div>
+                    <button class="exp-toggle" onclick="toggleDetails(this)">
+                        <span>View Details</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                     <div class="exp-details">
                         <div class="detail-item">
-                            <h4>Role:</h4>
-                            <p>Team Leader | Top 10 Solutions</p>
+                            <h4>Key Contributions</h4>
+                            <ul>
+                                <li>Led team strategy and solution development</li>
+                                <li>Structured comprehensive business approach</li>
+                                <li>Coordinated presentation delivery</li>
+                            </ul>
                         </div>
                         <div class="detail-item">
-                            <h4>Achievements:</h4>
+                            <h4>Skills Demonstrated</h4>
                             <ul>
-                                <li>Our project was selected among the top 10 nationwide</li>
-                                <li>Developed comprehensive business strategy</li>
-                                <li>Presented to industry experts</li>
+                                <li>Strategic business thinking</li>
+                                <li>Team leadership under pressure</li>
+                                <li>Effective communication of complex ideas</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 <!-- DK Hackathon -->
-                <div class="competition-item">
-                    <h4>DK Business Hackathon</h4>
-                    <p class="competition-description">Collaborated with a team to develop an original business idea and
-                        prototype.</p>
-                    <button class="exp-toggle" onclick="toggleDetails(this)">Learn More <i
-                            class="fas fa-chevron-down"></i></button>
+                <div class="competition-card">
+                    <div class="competition-header">
+                        <h3>DK Business Hackathon</h3>
+                        <span class="competition-tag">Team Project</span>
+                    </div>
+                    <p class="competition-description">Collaborated to develop original business idea and prototype
+                        within constrained timeframe.</p>
+                    <div class="competition-meta">
+                        <span class="meta-item">
+                            <i class="fas fa-lightbulb"></i>
+                            Ideation
+                        </span>
+                        <span class="meta-item">
+                            <i class="fas fa-rocket"></i>
+                            Prototyping
+                        </span>
+                    </div>
+                    <button class="exp-toggle" onclick="toggleDetails(this)">
+                        <span>View Details</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                     <div class="exp-details">
                         <div class="detail-item">
-                            <h4>Role:</h4>
-                            <p>Participant | Business Idea & Prototype Development</p>
-                        </div>
-                        <div class="detail-item">
-                            <h4>Focus Areas:</h4>
+                            <h4>Focus Areas</h4>
                             <ul>
-                                <li>Ideation and design thinking</li>
-                                <li>User needs analysis</li>
-                                <li>Rapid prototyping</li>
+                                <li>Design thinking methodologies</li>
+                                <li>User needs identification</li>
+                                <li>Rapid concept validation</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 <!-- Business Idea Competition -->
-                <div class="competition-item">
-                    <h4>Business Idea Competition (Ukraine-wide)</h4>
-                    <p class="competition-description">Developed and pitched a full business concept in the final round.
-                    </p>
-                    <button class="exp-toggle" onclick="toggleDetails(this)">Learn More <i
-                            class="fas fa-chevron-down"></i></button>
+                <div class="competition-card">
+                    <div class="competition-header">
+                        <h3>Business Idea Competition</h3>
+                        <span class="competition-tag">Finalist</span>
+                    </div>
+                    <p class="competition-description">Developed and pitched full business concept in national
+                        competition final round.</p>
+                    <div class="competition-meta">
+                        <span class="meta-item">
+                            <i class="fas fa-microphone"></i>
+                            Pitch Presenter
+                        </span>
+                        <span class="meta-item">
+                            <i class="fas fa-chart-line"></i>
+                            Business Modeling
+                        </span>
+                    </div>
+                    <button class="exp-toggle" onclick="toggleDetails(this)">
+                        <span>View Details</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                     <div class="exp-details">
                         <div class="detail-item">
-                            <h4>Role:</h4>
-                            <p>Finalist | Pitch Presenter</p>
-                        </div>
-                        <div class="detail-item">
-                            <h4>Skills Gained:</h4>
+                            <h4>Key Aspects</h4>
                             <ul>
-                                <li>Business storytelling</li>
-                                <li>Market positioning</li>
-                                <li>Business model creation</li>
+                                <li>Business storytelling techniques</li>
+                                <li>Market positioning strategy</li>
+                                <li>Financial projections</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 <!-- Harvard Competition -->
-                <div class="competition-item">
-                    <h4>Harvard Crimson Global Case Competition</h4>
-                    <p class="competition-description">Led an international team in solving a complex business case.</p>
-                    <button class="exp-toggle" onclick="toggleDetails(this)">Learn More <i
-                            class="fas fa-chevron-down"></i></button>
+                <div class="competition-card">
+                    <div class="competition-header">
+                        <h3>Harvard Crimson Global Case</h3>
+                        <span class="competition-tag">International</span>
+                    </div>
+                    <p class="competition-description">Led international team in solving complex business case for
+                        prestigious competition.</p>
+                    <div class="competition-meta">
+                        <span class="meta-item">
+                            <i class="fas fa-globe"></i>
+                            Global Team
+                        </span>
+                        <span class="meta-item">
+                            <i class="fas fa-chess"></i>
+                            Strategy
+                        </span>
+                    </div>
+                    <button class="exp-toggle" onclick="toggleDetails(this)">
+                        <span>View Details</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                     <div class="exp-details">
                         <div class="detail-item">
-                            <h4>Role:</h4>
-                            <p>Team Leader | International Participation</p>
-                        </div>
-                        <div class="detail-item">
-                            <h4>Key Aspects:</h4>
+                            <h4>Challenges Overcome</h4>
                             <ul>
-                                <li>Strategic thinking under pressure</li>
-                                <li>Cross-cultural team coordination</li>
-                                <li>Time-constrained decision-making</li>
+                                <li>Time zone coordination</li>
+                                <li>Cultural differences in teamwork</li>
+                                <li>Time-constrained analysis</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Courses -->
-            <div class="experience-card">
-                <div class="exp-header">
-                    <h3>Courses & Training</h3>
-                    <div class="exp-tag">Education</div>
-                </div>
-
-                <!-- UF Startup School -->
-                <div class="course-item">
-                    <h4>UF Startup School Beginner</h4>
-                    <p class="course-description">Developed and pitched a business idea to real investors in a startup
-                        bootcamp.</p>
-                    <button class="exp-toggle" onclick="toggleDetails(this)">Learn More <i
-                            class="fas fa-chevron-down"></i></button>
-                    <div class="exp-details">
-                        <div class="detail-item">
-                            <h4>Duration:</h4>
-                            <p>December 11–27, 2024</p>
-                        </div>
-                        <div class="detail-item">
-                            <h4>Key Learnings:</h4>
-                            <ul>
-                                <li>Ideation and validation techniques</li>
-                                <li>Presentation under time pressure</li>
-                                <li>Investor pitch development</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- English for Business -->
-                <div class="course-item">
-                    <h4>English for Business and Entrepreneurship – University of Pennsylvania</h4>
-                    <p class="course-description">Developing business communication skills in English.</p>
-                    <button class="exp-toggle" onclick="toggleDetails(this)">Learn More <i
-                            class="fas fa-chevron-down"></i></button>
-                    <div class="exp-details">
-                        <div class="detail-item">
-                            <h4>Status:</h4>
-                            <p>In progress</p>
-                        </div>
-                        <div class="detail-item">
-                            <h4>Focus Areas:</h4>
-                            <ul>
-                                <li>Business pitching in English</li>
-                                <li>Branding vocabulary</li>
-                                <li>Startup terminology</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Marketing Course -->
-                <div class="course-item">
-                    <h4>Introduction to Marketing – University of Pennsylvania</h4>
-                    <p class="course-description">Exploring fundamental marketing concepts and strategies.</p>
-                    <button class="exp-toggle" onclick="toggleDetails(this)">Learn More <i
-                            class="fas fa-chevron-down"></i></button>
-                    <div class="exp-details">
-                        <div class="detail-item">
-                            <h4>Status:</h4>
-                            <p>In progress</p>
-                        </div>
-                        <div class="detail-item">
-                            <h4>Topics Covered:</h4>
-                            <ul>
-                                <li>Consumer behavior analysis</li>
-                                <li>Market segmentation</li>
-                                <li>Positioning strategies</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Pitch & Presentation -->
-                <div class="course-item">
-                    <h4>Pitch & Presentation – Nobel</h4>
-                    <p class="course-description">Learned persuasive communication and presentation skills.</p>
-                    <button class="exp-toggle" onclick="toggleDetails(this)">Learn More <i
-                            class="fas fa-chevron-down"></i></button>
-                    <div class="exp-details">
-                        <div class="detail-item">
-                            <h4>Practical Applications:</h4>
-                            <ul>
-                                <li>Confident pitch delivery</li>
-                                <li>Effective presentation structure</li>
-                                <li>Applied in real competitions</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Leadership Course -->
-                <div class="course-item">
-                    <h4>Leadership – Nobel</h4>
-                    <p class="course-description">Developed leadership skills through practical exercises.</p>
-                    <button class="exp-toggle" onclick="toggleDetails(this)">Learn More <i
-                            class="fas fa-chevron-down"></i></button>
-                    <div class="exp-details">
-                        <div class="detail-item">
-                            <h4>Key Focus Areas:</h4>
-                            <ul>
-                                <li>Decision-making frameworks</li>
-                                <li>Emotional intelligence</li>
-                                <li>Project ownership</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Critical Thinking -->
-                <div class="course-item">
-                    <h4>Critical Thinking – Junior Academy of Sciences of Ukraine (МАН)</h4>
-                    <p class="course-description">Studied analytical thinking and problem-solving approaches.</p>
-                    <button class="exp-toggle" onclick="toggleDetails(this)">Learn More <i
-                            class="fas fa-chevron-down"></i></button>
-                    <div class="exp-details">
-                        <div class="detail-item">
-                            <h4>Skills Developed:</h4>
-                            <ul>
-                                <li>Logical reasoning</li>
-                                <li>Argument analysis</li>
-                                <li>Business strategy formulation</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+    <!-- Achievements Section -->
+    <section id="achievements" class="section achievements-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Recognized Excellence</span>
+                <h2 class="section-title">Achievements</h2>
+                <div class="section-divider"></div>
             </div>
-        </section>
-
-        <!-- Achievements Section -->
-        <section id="achievements" class="section">
-            <h2 class="section-title"><span>02</span> Achievements</h2>
 
             <div class="achievements-grid">
                 <div class="achievement-card">
-                    <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
                     <h3>Economics Olympiad</h3>
-                    <p>3rd Place Regional • 14th/117 Place Regional (Bendukidze center)</p>
+                    <p>3rd Place Regional • 14th/117 Place National</p>
+                    <span class="achievement-source">Bendukidze Center</span>
                 </div>
 
                 <div class="achievement-card">
-                    <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
                     <h3>UBiz Case Competition</h3>
-                    <p>Top 10 Solution (Ukraine-wide)</p>
+                    <p>Top 10 Solution Nationwide</p>
+                    <span class="achievement-source">Ukraine-wide</span>
                 </div>
 
                 <div class="achievement-card">
-                    <div class="achievement-icon"><i class="fas fa-award"></i></div>
-                    <h3>Kredo Business Idea Competition</h3>
-                    <p>Finalist with KiCareer project</p>
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Business Idea Competition</h3>
+                    <p>Finalist with KiCareer Project</p>
+                    <span class="achievement-source">Kredo</span>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Skills -->
-            <div class="skills-section">
-                <h3 class="skills-title">Core Competencies</h3>
-                <div class="skills-container">
-                    <div class="skill-category">
-                        <h4>Business & Strategy</h4>
-                        <ul>
-                            <li>Business Model Development</li>
-                            <li>Market Research & Analysis</li>
-                            <li>Financial Modeling</li>
-                            <li>Strategic Planning</li>
-                        </ul>
-                    </div>
+    <!-- Skills Section -->
+    <section class="section skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">What I Bring</span>
+                <h2 class="section-title">Core Competencies</h2>
+                <div class="section-divider"></div>
+            </div>
 
-                    <div class="skill-category">
-                        <h4>Technology & Design</h4>
-                        <ul>
-                            <li>UI/UX Design Principles</li>
-                            <li>Product Development</li>
-                            <li>Prototyping (Figma)</li>
-                            <li>Technical Communication</li>
-                        </ul>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Business & Strategy</h3>
                     </div>
+                    <ul class="skill-list">
+                        <li>
+                            <span class="skill-name">Business Model Development</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Market Research & Analysis</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Financial Modeling</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Strategic Planning</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 88%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
 
-                    <div class="skill-category">
-                        <h4>Leadership</h4>
-                        <ul>
-                            <li>Team Management</li>
-                            <li>Public Speaking</li>
-                            <li>Investor Pitching</li>
-                            <li>Cross-functional Collaboration</li>
-                        </ul>
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Technology & Design</h3>
                     </div>
+                    <ul class="skill-list">
+                        <li>
+                            <span class="skill-name">UI/UX Design Principles</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Product Development</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 82%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Prototyping (Figma)</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 78%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Technical Communication</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Leadership</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>
+                            <span class="skill-name">Team Management</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 88%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Public Speaking</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 92%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Investor Pitching</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Cross-functional Collaboration</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <h2 class="section-title"><span>03</span> Contact</h2>
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-divider"></div>
+            </div>
 
-            <div class="contact-content">
+            <div class="contact-container">
                 <div class="contact-info">
-                    <a href="mailto:mariyak27.07@gmail.com" class="contact-link">
-                        <i class="fas fa-envelope"></i> mariyak27.07@gmail.com
-                    </a>
-                    <a href="tel:+380967130631" class="contact-link">
-                        <i class="fas fa-phone"></i> +380 96 713 06 31
-                    </a>
-                </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:mariyak27.07@gmail.com">mariyak27.07@gmail.com</a>
+                        </div>
+                    </div>
 
-                <div class="contact-form">
-                    <h3>Send me a message</h3>
-                    <form>
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
                         </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <a href="tel:+380967130631">+380 96 713 06 31</a>
                         </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="form-submit">
-                            <span>Send Message</span>
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
+                    </div>
 
-                <div class="social-links">
-                    <h3>Connect With Me</h3>
-                    <div class="social-icons">
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-behance"></i></a>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <span>Kyiv, Ukraine</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <footer class="footer">
-            <p>&copy; 2025 Maria Kushch. All rights reserved.</p>
-        </footer>
-    </div>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="social-links">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">MK</div>
+                <div class="footer-links">
+                    <a href="#work">Work</a>
+                    <a href="#achievements">Achievements</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-copyright">
+                    &copy; 2025 Maria Kushch. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
