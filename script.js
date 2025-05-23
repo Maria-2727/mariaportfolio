@@ -6,11 +6,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelector('.nav-links');
     
     mobileMenuButton.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        mobileMenuButton.innerHTML = navLinks.classList.contains('active') ? 
-            '<i class="fas fa-times"></i>' : 
-            '<i class="fas fa-bars"></i>';
-    });
+    navLinks.classList.toggle('active');
+
+    // Меняем иконку
+    mobileMenuButton.innerHTML = navLinks.classList.contains('active') ? 
+        '<i class="fas fa-times"></i>' : 
+        '<i class="fas fa-bars"></i>';
+
+    // Блокируем или разрешаем скролл
+    document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+});
 
     // ======================
     // Sticky Navigation
@@ -55,6 +60,14 @@ const heroHeight = heroSection ? heroSection.offsetHeight : 0;
             }
         });
     });
+// Закрытие меню при клике на ссылку
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileMenuButton.innerHTML = '<i class="fas fa-bars"></i>';
+        document.body.style.overflow = '';
+    });
+});
 
     // ======================
     // Experience Section Toggles
@@ -253,3 +266,11 @@ const heroHeight = heroSection ? heroSection.offsetHeight : 0;
     // ======================
     highlightActiveSection();
 });
+
+    
+    
+        
+        
+    
+    
+    
