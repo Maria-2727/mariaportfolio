@@ -400,14 +400,19 @@ a {
 }
 
 .hero-image {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    /* Центрирование по горизонтали */
+    align-items: center;
+    /* Центрирование по вертикали (если нужно) */
+    margin-top: 2rem;
 }
 
 .image-wrapper {
     position: relative;
     width: 400px;
     height: 400px;
-    border-radius: var(--radius-lg);
+    border-radius: 50%;
     overflow: hidden;
 }
 
@@ -415,7 +420,7 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: var(--radius-lg);
+    border-radius: 50%;
     position: relative;
     z-index: 2;
     box-shadow: var(--shadow-xl);
@@ -433,35 +438,36 @@ a {
 
 .tech-orbits {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
     z-index: 3;
+    /* Ниже изображения */
+    pointer-events: none;
 }
 
 .orbit {
     position: absolute;
-    border-radius: 50%;
-    border: 1px dashed rgba(67, 97, 238, 0.3);
-    animation: spin linear infinite;
-}
-
-.orbit-1 {
-    width: 120px;
-    height: 120px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 1px dashed rgba(67, 97, 238, 0.3);
+    animation: spin linear infinite;
+    pointer-events: none;
+}
+
+.orbit-1 {
+    width: 300px;
+    height: 300px;
     animation-duration: 20s;
 }
 
 .orbit-2 {
-    width: 200px;
-    height: 200px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 360px;
+    height: 360px;
     animation-duration: 30s;
 }
 
@@ -485,22 +491,25 @@ a {
     color: var(--accent);
 }
 
-.orbit-1 .tech-icon {
-    top: 0;
+.orbit .tech-icon {
+    top: -20px;
+    /* смещаем вверх от центра орбиты */
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 0);
 }
 
 .orbit-2 .tech-icon:first-child {
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    top: -20px;
+        /* смещаем вверх от центра орбиты */
+        left: 50%;
+        transform: translate(-50%, 0);
 }
 
 .orbit-2 .tech-icon:last-child {
-    bottom: 0;
+top: -20px;
+    /* смещаем вверх от центра орбиты */
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 0);
 }
 
 /* Section Styles */
@@ -1357,6 +1366,7 @@ a {
         left: -18px;
     }
 }
+
 /* Scroll to Top Button */
 .scroll-to-top {
     position: fixed;
@@ -1399,6 +1409,7 @@ a {
 .form-submit.success {
     background: #4BB543 !important;
 }
+
 .experience-card.visible,
 .project-card.visible,
 .achievement-card.visible,
