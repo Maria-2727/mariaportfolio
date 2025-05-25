@@ -99,10 +99,14 @@ body {
     bottom: -200px;
     right: -100px;
     animation-delay: 2s;
+    opacity: 0.09;
+        /* добавь эту строку */
+        z-index: -1;
+        /* убедись, что он точно сзади */
+    
 }
-.circle-2 {
-    display: none;
-}
+
+
 .shape {
     position: absolute;
     opacity: 0.08;
@@ -1674,5 +1678,21 @@ top: -20px;
 
     .nav-links {
         display: flex;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+@media (max-width: 768px) {
+    .container {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
     }
 }
