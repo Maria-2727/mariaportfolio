@@ -968,6 +968,7 @@ top: -20px;
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.6s ease;
+    
 }
 
 .achievement-card.visible {
@@ -1682,17 +1683,52 @@ top: -20px;
 }
 @media (max-width: 768px) {
     .container {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-}
-.container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-@media (max-width: 768px) {
-    .container {
         padding-left: 0.75rem;
         padding-right: 0.75rem;
+    }
+}
+@media (min-width: 992px) {
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hero-content {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+}
+.achievements-grid {
+    display: grid;
+    
+    gap: var(--space-lg);
+}
+@media (min-width: 1200px) {
+    .achievements-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .achievements-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
