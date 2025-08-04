@@ -100,10 +100,10 @@ body {
     right: -100px;
     animation-delay: 2s;
     opacity: 0.09;
-        /* добавь эту строку */
-        z-index: -1;
-        /* убедись, что он точно сзади */
-    
+    /* добавь эту строку */
+    z-index: -1;
+    /* убедись, что он точно сзади */
+
 }
 
 
@@ -421,7 +421,7 @@ a {
     border-radius: 50%;
     overflow: hidden;
     transform-style: preserve-3d;
-        perspective: 1000px;
+    perspective: 1000px;
 
 }
 
@@ -451,6 +451,7 @@ a {
     opacity: 0.5;
     animation: borderPulse 4s infinite ease-in-out;
 }
+
 .image-wrapper:hover .profile-photo {
     transform: scale(1.03) rotate(-1deg);
     filter: grayscale(0%) contrast(120%);
@@ -462,6 +463,7 @@ a {
     transform: scale(1.02);
     opacity: 0.8;
 }
+
 /* Animations */
 @keyframes borderPulse {
     0% {
@@ -521,9 +523,9 @@ a {
     z-index: 2;
     box-shadow: var(--shadow-xl);
     transform-style: preserve-3d;
-        transition: all 0.5s ease;
-        border: 8px solid var(--lighter);
-        filter: grayscale(20%) contrast(110%);
+    transition: all 0.5s ease;
+    border: 8px solid var(--lighter);
+    filter: grayscale(20%) contrast(110%);
 }
 
 .glow-effect {
@@ -534,7 +536,7 @@ a {
     z-index: 1;
     opacity: 0.3;
     animation: pulse 8s infinite alternate;
-    
+
 }
 
 .tech-orbits {
@@ -601,13 +603,13 @@ a {
 
 .orbit-2 .tech-icon:first-child {
     top: -20px;
-        /* смещаем вверх от центра орбиты */
-        left: 50%;
-        transform: translate(-50%, 0);
+    /* смещаем вверх от центра орбиты */
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .orbit-2 .tech-icon:last-child {
-top: -20px;
+    top: -20px;
     /* смещаем вверх от центра орбиты */
     left: 50%;
     transform: translate(-50%, 0);
@@ -968,7 +970,7 @@ top: -20px;
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.6s ease;
-    
+
 }
 
 .achievement-card.visible {
@@ -1525,6 +1527,7 @@ top: -20px;
     transform: translateY(0) !important;
     transition: all 0.6s ease;
 }
+
 /* Photo Decorations */
 .photo-decoration {
     position: absolute;
@@ -1578,6 +1581,7 @@ top: -20px;
     right: 10%;
     animation: pulse 2s infinite ease-in-out 1s;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -1585,6 +1589,7 @@ top: -20px;
     padding-right: 1.5rem;
     width: 100%;
 }
+
 .resume-button {
     display: inline-flex;
     align-items: center;
@@ -1604,6 +1609,7 @@ top: -20px;
     background: var(--primary);
     color: var(--lighter);
 }
+
 /* Мобильная кнопка */
 .mobile-menu-button {
     display: none;
@@ -1681,12 +1687,14 @@ top: -20px;
         display: flex;
     }
 }
+
 @media (max-width: 768px) {
     .container {
         padding-left: 0.75rem;
         padding-right: 0.75rem;
     }
 }
+
 @media (min-width: 992px) {
     .hero {
         display: flex;
@@ -1716,11 +1724,13 @@ top: -20px;
         justify-content: center;
     }
 }
+
 .achievements-grid {
     display: grid;
-    
+
     gap: var(--space-lg);
 }
+
 @media (min-width: 1200px) {
     .achievements-grid {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
